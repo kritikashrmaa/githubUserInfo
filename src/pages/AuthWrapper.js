@@ -20,7 +20,7 @@ function AuthWrapper ({children}) {
     </Wrapper>
     
   }
-  return <>{ children}</>
+  return <>{children}</>
 }
 
 const Wrapper = styled.section`

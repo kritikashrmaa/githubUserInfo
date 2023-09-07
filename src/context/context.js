@@ -46,11 +46,11 @@ export const GithubProvider = ( { children } ) => {
                     
                     const [repos, followers] = res;
                     
-                    if ( res.repos.status === 'fulfilled' )
+                    if ( repos.status === 'fulfilled' )
                     {
                         setRepos( repos.value.data );
                     }
-                    if ( res.followers.status === 'fulfilled' )
+                    if ( followers.status === 'fulfilled' )
                     {
                         setFollwers( followers.value.data );
                     }
